@@ -4,7 +4,7 @@
 // Po obliczeniu sumy, wyświetl wynik w konsoli.
 let sum = 0;
 
-for (let i = 1; i < 101; i++) {
+for (let i = 1; i <= 100; i++) {
   if (i % 2 === 0) {
     sum += i;
   }
@@ -38,4 +38,19 @@ for (let i = 1; i <= 6; i++) {
     stars += "*";
   }
   console.log(stars);
+}
+
+// Zadanie 3: Licznik podzielnych przez 3
+
+// Napisz kod, który oblicza ilość liczb podzielnych przez 3 (nie zwracają reszty) w zakresie od 1 do 50 (włącznie) korzystając z pętli while.
+// Po obliczeniu ilości liczb, wyświetl wynik w konsoli.
+
+let counter = 0;
+let num = 1;
+
+while (num <= 50) {
+  if (num % 3 === 0) {
+    counter++;
+  }
+  num++;
 }
